@@ -12,14 +12,12 @@
     <title>Arkanum Terra - Start</title>
   </head>
   <body class="game-window-size" id="game-window">
-    <!-- Start des Spiels - der Startbildschirm -->
+    <!-- Titlebildschirm -->
     <div id="title-screen">
-      <!-- Hintergrundbild -->
       <img
         id="background-image"
         src="img/title-bild.jpg"
         alt="Hintergrundbild" />
-      <!-- Inhalt des Startbildschirms -->
       <div id="content">
         <h1 class="text-border-lightgrey text-size-50">Arkanum Terra</h1>
         <img id="logo" src="img/logo.jpeg" alt="Spiel-Logo" />
@@ -31,16 +29,33 @@
           <button id="fortsetzen-button">Fortsetzen</button>
           <button id="optionen-button">Optionen</button>
         </div>
-        <div id="char-creation">
-          <h2 class="text-border-lightgrey text-size-30">
-            Charaktererstellung
-          </h2>
-          <img id="player-logo" src="img/logo.jpeg" alt="Spiel-Logo" />
-          <button id="select-image-button">Charakter Auswählen</button>
-          <img
-            id="player-image"
-            src="img/player-profil.jpeg"
-            alt="Spieler-Profilbild" />
+
+        <!-- Charakterauswahl -->
+        <h1 class="text-border-lightgrey text-size-40">Charakterauswahl</h1>
+
+        <div id="char-creation" class="char-card-container">
+          <div class="char-card">
+            <img src="img/player-profil.jpeg" alt="Charakter 1" />
+            <p>Charakter 1 - Beschreibung</p>
+            <button class="char-choice-knight">Auswählen</button>
+          </div>
+          <div class="char-card">
+            <img src="img/player-profil.jpeg" alt="Charakter 2" />
+            <p>Charakter 2 - Beschreibung</p>
+            <button class="char-choice-assassin">Auswählen</button>
+          </div>
+
+          <div class="char-card">
+            <img src="img/player-profil.jpeg" alt="Charakter 3" />
+            <p>Charakter 3 - Beschreibung</p>
+            <button class="char-choice-ranger">Auswählen</button>
+          </div>
+
+          <div class="char-card">
+            <img src="img/player-profil.jpeg" alt="Charakter 4" />
+            <p>Charakter 4 - Beschreibung</p>
+            <button class="char-choice-barde">Auswählen</button>
+          </div>
         </div>
       </div>
     </div>

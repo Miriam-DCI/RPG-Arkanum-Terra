@@ -1,64 +1,67 @@
 /*schriftart*/
 * {
     font-family: 'Pixelify Sans', sans-serif;
-}
-
-/* Stil für den Titlebildschirm */
-#title-screen {
+  }
+  
+  /* Stil für den Titlebildschirm */
+  #title-screen {
     position: relative;
     background-color: #000;
     text-align: center;
     height: 100vh; /* Füllt die gesamte Bildschirmhöhe aus */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
-
+  
 #background-image {
-    position: absolute; /* Hintergrundbild über dem Startbildschirm positionieren */
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    opacity: 0.7; /* Verringert die Opazität des Hintergrundbilds */
+    opacity: 0.7;
 }
-
+  
 #content {
     position: relative;
-    z-index: 1; /* Der Inhalt liegt über dem Hintergrundbild */
+    z-index: 1;
     color: #000;
-    padding: 20px;
 }
-
-#logo {
+  
+  #logo {
     max-width: 200px;
     margin: 0 auto; /* Zentriert das Logo horizontal */
     display: block;
-}
-
-#start-button {
+  }
+  
+  #start-button {
     background-color: #000;
     margin: 20px auto; /* Zentriert den Start-Button horizontal */
-}
-#start-button:hover {
+  }
+  #start-button:hover {
     background-color: rgb(41, 41, 41);
-}
-
-#fortsetzen-button {
+  }
+  
+  #fortsetzen-button {
     background-color: blue;
     margin: 20px auto; /* Zentriert den Start-Button horizontal */
-}
-#fortsetzen-button:hover {
+  }
+  #fortsetzen-button:hover {
     background-color: rgb(81, 81, 243);
-}
-
-#optionen-button {
+  }
+  
+  #optionen-button {
     background-color: green;
     margin: 20px auto; /* Zentriert den Start-Button horizontal */
-}
-#optionen-button:hover {
+  }
+  #optionen-button:hover {
     background-color: rgb(73, 124, 73);
-}
-
-/* Füge einige Stile für den Player-Logo hinzu */
-#player-logo {
+  }
+  
+  /* Füge einige Stile für den Player-Logo hinzu */
+  #player-logo {
     max-width: 100px; /* Passe die maximale Breite nach Bedarf an */
     margin: 10px;
   }
@@ -77,39 +80,97 @@
   #select-image-button:hover {
     background-color: rgb(41, 41, 41);
   }
-  /* Verstecke den Spieler-Profilbild zuerst */
-  #player-image {
-    display: none;
+  
+  /* Füge die folgenden Klassen hinzu */
+  
+  .char-card-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 20px;
+    margin: 20px;
+}
+  
+.char-card {
+    width: 50%;
+    padding: 20px;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto; /* Horizontal zentrieren */
+}
+
+  
+.char-card img {
+    max-width: 100%;
+    height: auto;
+}
+  
+.char-card p {
+    text-align: center;
+    margin-top: 10px;
+}
+  
+  .char-card:hover {
+    transform: scale(1.05); /* Vergrößere die Karte beim Hover */
+  }
+
+  .char-choice-knight,
+  .char-choice-assassin,
+  .char-choice-ranger,
+  .char-choice-barde {
+      background-color: #009688;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      font-size: 18px;
+      cursor: pointer;
+      border-radius: 5px;
+      margin-top: 10px;
   }
   
-h1 {
-    font-size: 36px;
-}
+  .char-choice-knight:hover,
+  .char-choice-assassin:hover,
+  .char-choice-ranger:hover,
+  .char-choice-barde:hover {
+      background-color: #007770;
+  }
 
-p {
+/* Weitere individuelle Stile für die Buttons hinzufügen, wenn gewünscht */
+
+  
+  h1 {
+    font-size: 36px;
+  }
+  
+  p {
     font-size: 18px;
     margin-top: 20px;
-}
-
-button {
-    
+  }
+  
+  button {
     color: #fff;
     border: none;
     padding: 10px 20px;
     font-size: 20px;
     cursor: pointer;
     border-radius: 15px;
-}
-
-.button-start-screen {
+  }
+  
+  .button-start-screen {
     display: flex;
     flex-direction: column; /* Anordnung der Buttons in einer Spalte */
     align-items: center; /* Zentrierung der Buttons horizontal */
     margin: 20px auto; /* Zentriert den Start-Button horizontal */
-}
-
-/* Stil für das Spiel-Fenster */
-.game-window-size {
+  }
+  
+  /* Stil für das Spiel-Fenster */
+  .game-window-size {
     width: 50%; /* 2/4 der Bildschirmbreite */
     height: 75vh; /* 3/4 der Bildschirmhöhe */
     margin: 0 auto; /* Zentriert das Spiel-Fenster horizontal */
@@ -117,72 +178,71 @@ button {
     position: relative;
     z-index: 2; /* Das Spiel-Fenster liegt über dem Startbildschirm */
     overflow: hidden; /* Verhindert das Scrollen innerhalb des Spiel-Fensters */
-}
-
-
-/*Styling klassen text*/
-
-.text-bold {
+  }
+  
+  /*Styling Klassen text*/
+  .text-bold {
     font-weight: bold;
-}
-.text-center {
+  }
+  .text-center {
     text-align: center;
-}
-.text-left {
+  }
+  .text-left {
     text-align: left;
-}
-.text-right {
+  }
+  .text-right {
     text-align: right;
-}
-.text-color-white {
+  }
+  .text-color-white {
     color: #fff;
-}
-.text-color-black {
+  }
+  .text-color-black {
     color: #000;
-}
-.text-color-red {
+  }
+  .text-color-red {
     color: red;
-}
-.text-color-green {
+  }
+  .text-color-green {
     color: green;
-}
-.text-color-blue {
+  }
+  .text-color-blue {
     color: blue;
-}
-.text-color-yellow {
+  }
+  .text-color-yellow {
     color: yellow;
-}
-.text-color-orange {
+  }
+  .text-color-orange {
     color: orange;
-}
-.text-color-purple {
+  }
+  .text-color-purple {
     color: purple;
-}
-.text-color-pink {
+  }
+  .text-color-pink {
     color: hotpink;
-}
-.text-color-gold {
+  }
+  .text-color-gold {
     color: rgba(255, 217, 0, 0.767);
-}
-.text-size-10 {
+  }
+  .text-size-10 {
     font-size: 10px;
-}
-.text-size-20 {
+  }
+  .text-size-20 {
     font-size: 20px;
-}
-.text-size-30 {
+  }
+  .text-size-30 {
     font-size: 30px;
-}
-.text-size-40 {
+  }
+  .text-size-40 {
     font-size: 40px;
-}
-.text-size-50 {
+  }
+  .text-size-50 {
     font-size: 50px;
-}
-.text-border-lightgrey {
+  }
+  .text-border-lightgrey {
     text-shadow:
-        -1px -1px 0 lightgrey,  
-        1px -1px 0 lightgrey,
-        -1px 1px 0 lightgrey,
-        1px 1px 0 lightgrey; /* Füge eine weiße Umrandung um die Buchstaben hinzu */
-}
+      -1px -1px 0 lightgrey,
+      1px -1px 0 lightgrey,
+      -1px 1px 0 lightgrey,
+      1px 1px 0 lightgrey; /* Füge eine weiße Umrandung um die Buchstaben hinzu */
+  }
+  
