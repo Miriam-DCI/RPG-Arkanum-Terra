@@ -1,0 +1,63 @@
+/* Stil für den Titlebildschirm */
+#title-screen {
+    position: relative;
+    background-color: #000;
+    text-align: center;
+    height: 100vh; /* Füllt die gesamte Bildschirmhöhe aus */
+}
+
+#background-image {
+    position: absolute; /* Hintergrundbild über dem Startbildschirm positionieren */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.7; /* Verringert die Opazität des Hintergrundbilds */
+}
+
+#content {
+    position: relative;
+    z-index: 1; /* Der Inhalt liegt über dem Hintergrundbild */
+    color: #fff;
+    padding: 20px;
+}
+
+#logo {
+    max-width: 200px;
+    margin: 0 auto; /* Zentriert das Logo horizontal */
+    display: block;
+}
+
+h1 {
+    font-size: 36px;
+}
+
+p {
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+button {
+    background-color: black;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 15px;
+}
+
+button:hover {
+    background-color: rgb(41, 41, 41);
+}
+
+/* Stil für das Spiel-Fenster */
+.game-window-size {
+    width: 50%; /* 2/4 der Bildschirmbreite */
+    height: 75vh; /* 3/4 der Bildschirmhöhe */
+    margin: 0 auto; /* Zentriert das Spiel-Fenster horizontal */
+    background-color: #333; /* Dunkelgraue Hintergrundfarbe */
+    position: relative;
+    z-index: 2; /* Das Spiel-Fenster liegt über dem Startbildschirm */
+    overflow: hidden; /* Verhindert das Scrollen innerhalb des Spiel-Fensters */
+}
