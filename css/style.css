@@ -57,6 +57,31 @@
     background-color: rgb(73, 124, 73);
 }
 
+/* Füge einige Stile für den Player-Logo hinzu */
+#player-logo {
+    max-width: 100px; /* Passe die maximale Breite nach Bedarf an */
+    margin: 10px;
+  }
+  
+  /* Stil für den Bild auswählen Button */
+  #select-image-button {
+    background-color: #000;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 15px;
+    margin: 10px;
+  }
+  #select-image-button:hover {
+    background-color: rgb(41, 41, 41);
+  }
+  /* Verstecke den Spieler-Profilbild zuerst */
+  #player-image {
+    display: none;
+  }
+  
 h1 {
     font-size: 36px;
 }
