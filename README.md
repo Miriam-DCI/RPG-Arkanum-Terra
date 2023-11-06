@@ -1,3 +1,5 @@
+##ressourcen
+
 # RPG-Arkanum-Terra
 
 Die Mysteriöse Katastrophe: Die Ursache der Katastrophe bleibt ein Rätsel. Die Menschen wissen nicht, ob es sich um eine Naturkatastrophe, den Einfluss einer außerirdischen Entität oder eine geheimnisvolle Energiequelle handelt.
