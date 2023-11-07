@@ -1,42 +1,28 @@
 document.addEventListener("DOMContentLoaded", function() {
   const startButton = document.getElementById("start-button");
-  const characterCreation = document.getElementById("char-creation");
-  const playerLogo = document.getElementById("player-logo");
+  const charSelection = document.getElementById("char-selection");
+  const titleScreen = document.getElementById("title-screen");
 
   function changeBackground() {
-    const backgroundImage = document.getElementById("background-image");
-    backgroundImage.src = "img/char-creation.jpg";
+      const backgroundImage = document.getElementById("background-image");
+      backgroundImage.src = "img/char-creation.jpg";
   }
 
   function hide(element) {
-    element.style.display = "none";
+      element.style.display = "none";
   }
 
   function show(element) {
-    element.style.display = "block";
+      element.style.display = "block";
   }
 
-  function imgSize(element, size) {
-    element.style.width = size;
-  }
-
-  characterCreation.style.display = "none";
+  charSelection.style.display = "none";
 
   if (startButton) {
-    startButton.addEventListener("click", function() {
-      characterCreation.style.display = "grid";
-      changeBackground();
-      hide(document.querySelector(".text-size-40"));
-      hide(document.querySelector(".button-start-screen"));
-      hide(document.querySelector("#logo"));
-      imgSize(playerLogo, "15%"); // Änderung hier
-    });
-  }
-
-  const selectImageButton = document.getElementById("select-image-button");
-  if (selectImageButton) {
-    selectImageButton.addEventListener("click", function() {
-      // Hier kannst du die Logik hinzufügen, um ein Bild auszuwählen
-    });
+      startButton.addEventListener("click", function() {
+          charSelection.style.display = "block";
+          changeBackground();
+          hide(titleScreen);
+      });
   }
 });

@@ -3,6 +3,12 @@ knight: https://aamatniekss.itch.io/fantasy-knight-free-pixelart-animated-charac
 
 erstellung von pixelart: https://www.pixilart.com/draw
 
+doppe klick strg+shift+f wort suche in repo
+strg+p datei suche in repo
+strg+f suche in datei
+strg+d mehrfach suche in datei
+strg+g zeilen nummer
+
 # RPG-Arkanum-Terra
 
 Die Mysteriöse Katastrophe: Die Ursache der Katastrophe bleibt ein Rätsel. Die Menschen wissen nicht, ob es sich um eine Naturkatastrophe, den Einfluss einer außerirdischen Entität oder eine geheimnisvolle Energiequelle handelt.
