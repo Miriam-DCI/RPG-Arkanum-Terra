@@ -11,7 +11,8 @@ html, body {
     font-family: sans-serif;
   }
   #console {
-   background-color: pink;
+   background-color: black;
+   color: white;
     width: 800px;
     height: 600px;
     border-radius: 15px;
