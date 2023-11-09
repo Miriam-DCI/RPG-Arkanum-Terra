@@ -1,3 +1,6 @@
+* {
+  font-family: "Alegreya", serif;
+}
 html,
 body {
   height: 100%;
@@ -8,22 +11,26 @@ body {
   align-items: center;
 }
 body {
-  background: rgb(3, 3, 71);
+  background-image: url(/img/universum-Animation.gif);
+  background-size: cover;
   font-family: sans-serif;
 }
 #console {
-  background-color: black;
-  color: white;
-  width: 800px;
-  height: 600px;
+  background-image: url(/img/Pfad-zur-burg.jpg);
+  /* background-color: #000; */
+  background-size: cover;
+  font-size: 30px;
+  width: 600px;
+  height: 500px;
   border-radius: 15px;
-  border: 1px solid greenyellow;
+  /* border: 1px solid black; */
   overflow: auto;
+  box-shadow: white 0px 0px 10px;
 }
 
 article {
   padding: 15px;
-  color: red;
+  color: black;
 }
 
 #btn-grid {
@@ -43,4 +50,104 @@ article {
 
 .btn:hover {
   border-color: black;
+}
+
+/* Stil transparente Klassen*/
+
+/* Transparenter Hintergrund mit niedriger Opazität (50%) */
+.ts-bg-black-opacity-50 {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* Transparenter Hintergrund mit mittlerer Opazität (70%) */
+.ts-bg-brown-opacity-70 {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+/* Transparenter Hintergrund mit hoher Opazität (85%) */
+.ts-bg-black-opacity-85 {
+  background-color: rgba(0, 0, 0, 0.85);
+}
+
+.ts-bg-brown-opacity-50 {
+  background-color: rgba(165, 81, 42, 0.5);
+}
+
+/* Transparenter Hintergrund mit mittlerer Opazität (70%) */
+.ts-bg-brown-opacity-70 {
+  background-color: rgba(165, 81, 42, 0.7);
+}
+
+/* Transparenter Hintergrund mit hoher Opazität (85%) */
+.ts-bg-brown-opacity-85 {
+  background-color: rgba(165, 81, 42, 0.85);
+}
+/* 
+
+/* Weitere individuelle Textstile */
+.text-color-black {
+  color: #000;
+}
+
+.text-color-red {
+  color: red;
+}
+
+.text-color-green {
+  color: green;
+}
+
+.text-color-blue {
+  color: blue;
+}
+
+.text-color-yellow {
+  color: yellow;
+}
+
+.text-color-orange {
+  color: orange;
+}
+
+.text-color-purple {
+  color: purple;
+}
+
+.text-color-pink {
+  color: hotpink;
+}
+
+.text-color-gold {
+  color: rgba(255, 217, 0, 0.767);
+}
+.text-size-10 {
+  font-size: 10px;
+}
+
+.text-size-20 {
+  font-size: 20px;
+}
+
+.text-size-30 {
+  font-size: 30px;
+}
+
+.text-size-40 {
+  font-size: 40px;
+}
+
+.text-size-50 {
+  font-size: 50px;
+}
+
+.text-border-lightgrey {
+  text-shadow: -1px -1px 0 lightgrey, 2px -1px 0 lightgrey, -1px 1px 0 lightgrey,
+    1px 1px 0 lightgrey;
+  /* Füge eine weiße Umrandung um die Buchstaben hinzu */
+}
+
+.text-border-black {
+  text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black,
+    1px 1px 0 black;
+  /* Füge eine weiße Umrandung um die Buchstaben hinzu */
 }

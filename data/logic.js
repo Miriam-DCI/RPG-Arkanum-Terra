@@ -1,10 +1,23 @@
+/*
+  TODO:
+  funktion zum tausch des bg-img
+  array aus dateipfade die sich je nach text-id anpassen
+
+*/
+
 const textElement = document.getElementById("text");
 const buttonOptionsElement = document.getElementById("btn-options");
 
-let state = {};
+let inventory = {};
+const bgImgPathArray = ["/img/Pfad-zur-burg.jpg", "/img/door-closeUp.jpg"];
+
+function setBgImg(imgUrl) {
+  const consoleElement = document.getElementById("console");
+  consoleElement.style.backgroundImage = `url(${imgUrl})`;
+}
 
 function startGame() {
-  state = {};
+  inventory = {};
   showtextNode(1);
 }
 
@@ -27,23 +40,26 @@ function showtextNode(textNodeindex) {
 }
 
 function showOption(option) {
-  return option.requiredState == null || option.requiredState(state);
+  return (
+    option.requiredinventory == null || option.requiredinventory(inventory)
+  );
 }
 
 function selectOption(option) {
   const nextTextNodeId = option.nextText;
-  state = Object.assign(state, option.setState);
+  inventory = Object.assign(inventory, option.setinventory);
   showtextNode(nextTextNodeId);
 }
 
 const textNodes = [
   {
     id: 1,
-    text: "Du stehst in einem dunklen Raum. Du siehst ein licht ca 10 meter entfernt. Was willst du tun?",
+    bgImg: setBgImg(bgImgPathArray[0]),
+    text: "Du stehst auf einer Brücke. Du siehst eine Tür ca 50 meter entfernt. Was willst du tun?",
     options: [
       {
-        text: "zum licht gehen",
-        setState: { bluekey: true },
+        text: "zum Tür gehen",
+        setinventory: { bluekey: true },
         nextText: 2,
       },
       {
@@ -58,11 +74,12 @@ const textNodes = [
   },
   {
     id: 2,
+    bgImg: setBgImg(bgImgPathArray[1]),
     text: "Du kommst an einer tür an. Auf dem Boden liegt ein kleiner blauer Stein der aussieht wie ein Tropfen. Du siehst in der mitte der tür eine art schlüsselloch in tropfen form. Was willst du tun?",
     options: [
       {
         text: "die tür mit dem stein öffnen",
-        setState: { bluekey: false },
+        setinventory: { bluekey: false },
         nextText: 5,
       },
       {
@@ -77,14 +94,14 @@ const textNodes = [
   },
   {
     id: 3,
-    text: "du siehst dich um und siehst eine abzweigung auf der linken seite die nach draußen führt. Was willst du tun?",
+    text: "du siehst dich um und siehst eine Treppe auf der linken seite die nach unten führt. Was willst du tun?",
     options: [
       {
         text: "zurück gehen",
         nextText: 1,
       },
       {
-        text: "zur abzweigung gehen",
+        text: "zur Treppe gehen",
         nextText: 7,
       },
       {
