@@ -7,6 +7,7 @@
 
 const textElement = document.getElementById("text");
 const buttonOptionsElement = document.getElementById("btn-options");
+const audioElement = document.getElementById("audio");
 
 let inventory = {};
 const bgImgPathArray = ["/img/Pfad-zur-burg.jpg", "/img/door-closeUp.jpg"];
@@ -18,7 +19,11 @@ function setBgImg(imgUrl) {
 
 function startGame() {
   inventory = {};
+  playSound();
   showtextNode(1);
+}
+function playSound() {
+  audioElement.play(); //hier wird das audio element mit abgespielt
 }
 
 function showtextNode(textNodeindex) {
