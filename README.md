@@ -1,6 +1,10 @@
 ##ressourcen
 knight: https://aamatniekss.itch.io/fantasy-knight-free-pixelart-animated-character
 
+tutorial video:https://www.youtube.com/watch?v=R1S_NhKkvGA&t=619s
+
+honorable mentions: melle mit styling ideen
+
 erstellung von pixelart: https://www.pixilart.com/draw
 
 doppe klick strg+shift+f wort suche in repo
