@@ -23,10 +23,10 @@ const audioElement = document.getElementById("audio");
 let inventory = {};
 const bgImgPathArray = ["/img/Pfad-zur-burg.jpg", "/img/door-closeUp.jpg"];
 
-function setBgImg(imgUrlIndex) {
-  const consoleElement = document.getElementById("console");
-  consoleElement.style.backgroundImage = `url(${bgImgPathArray[imgUrlIndex]})`;
-}
+// function setBgImg(imgUrlIndex) {
+//   const consoleElement = document.getElementById("console");
+//   consoleElement.style.backgroundImage = `url(${bgImgPathArray[imgUrlIndex]})`;
+// }
 
 function addAlly(ally) {
   character.allies.push(ally);
@@ -118,5 +118,5 @@ export {
   discoverLocation,
   addEnemy,
   addAlly,
-  setBgImg,
+  //setBgImg,
 };
