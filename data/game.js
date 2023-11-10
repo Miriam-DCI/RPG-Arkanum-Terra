@@ -10,6 +10,9 @@
   array für charackter story fortschritt (ids der textnodes werden ins array
   gepuscht und später kann abgefragt werden ob wir bereites an einem bestimmten 
   story punkt waren um andeere optionen zu bekommen)
+
+  Deploly error mit bildern fixen 
+
 */
 
 // imports
@@ -21,12 +24,18 @@ const buttonOptionsElement = document.getElementById("btn-options");
 const audioElement = document.getElementById("audio");
 
 let inventory = {};
+
 const bgImgPathArray = ["/img/Pfad-zur-burg.jpg", "/img/door-closeUp.jpg"];
 
-// function setBgImg(imgUrlIndex) {
-//   const consoleElement = document.getElementById("console");
-//   consoleElement.style.backgroundImage = `url(${bgImgPathArray[imgUrlIndex]})`;
-// }
+function setBgImg(imgUrlIndex, imageArray) {
+  // Überprüfen, ob der übergebene Index gültig ist
+  if (imgUrlIndex >= 0 && imgUrlIndex < imageArray.length) {
+    const consoleElement = document.getElementById("console");
+    consoleElement.style.backgroundImage = `url(${imageArray[imgUrlIndex]})`;
+  } else {
+    console.error("Ungültiger Index für das Hintergrundbild.");
+  }
+}
 
 function addAlly(ally) {
   character.allies.push(ally);
@@ -106,6 +115,7 @@ function selectOption(option) {
 startGame();
 
 export {
+  bgImgPathArray,
   selectOption,
   showOption,
   showtextNode,
@@ -118,5 +128,5 @@ export {
   discoverLocation,
   addEnemy,
   addAlly,
-  //setBgImg,
+  setBgImg,
 };

@@ -1,4 +1,5 @@
 import {
+  bgImgPathArray,
   selectOption,
   showOption,
   showtextNode,
@@ -11,7 +12,7 @@ import {
   discoverLocation,
   addEnemy,
   addAlly,
-  //SsetBgImg,
+  setBgImg,
 } from "./game.js";
 
 let character = {
@@ -43,7 +44,7 @@ const textNodes = [
   // Turmpfad
   {
     id: 10,
-    //bgImg: setBgImg(1),
+    bgImg: setBgImg(0, bgImgPathArray),
     text: "Du betrittst den Turm. Im Inneren siehst du verwitterte Wände und einen schwachen Lichtschein von oben. Eine Treppe führt nach oben, und auf der linken Seite ist eine Tür.",
     options: [
       { text: "Die Treppe nehmen", nextText: 20 },
@@ -58,6 +59,7 @@ const textNodes = [
   // Treppepfad
   {
     id: 20,
+    bgImg: setBgImg(1, bgImgPathArray),
     text: "Du gehst die Treppe hinauf und kommst zu einem höheren Stockwerk des Turms. Du hörst Geräusche aus einem Raum auf der rechten Seite.",
     options: [
       { text: "Zum Raum gehen", nextText: 30 },
