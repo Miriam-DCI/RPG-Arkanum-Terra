@@ -11,7 +11,8 @@ body {
   align-items: center;
 }
 body {
-  background-image: url("./img/universum-Animation.gif");
+  /* background-image: url("./img/universum-Animation.gif"); */
+  background-image: url("./img/Bild-wood.jpg");
   background-size: cover;
   font-family: sans-serif;
 }
