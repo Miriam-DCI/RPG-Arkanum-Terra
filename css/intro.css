@@ -11,12 +11,12 @@ body {
   align-items: center;
 }
 body {
-  background-image: url(/img/universum-Animation.gif);
+  background-image: url(./img/universum-Animation.gif);
   background-size: cover;
   font-family: sans-serif;
 }
 #console {
-  background-image: url(/img/Pfad-zur-burg.jpg);
+  background-image: url(./img/Pfad-zur-burg.jpg);
   /* background-color: #000; */
   background-size: cover;
   font-size: 30px;
