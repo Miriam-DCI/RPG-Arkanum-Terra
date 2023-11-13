@@ -40,7 +40,7 @@ let character = {
 };
 const textNodes = [
   {
-    bgImg: setBgImg(0),
+    // bgImg: setBgImg(0),
     id: 1,
     text: "Willkommen in Arkanum-Terra, eine Welt, die von einer mysteriösen Katastrophe heimgesucht wurde. Die Ursache bleibt ein Rätsel. Übernatürliche Kräfte sind freigesetzt worden, und die Gesellschaft ist neu geordnet. Ressourcen sind knapp, und Konflikte prägen das tägliche Überleben.",
     options: [{ text: "Weiter", nextText: 2 }],
@@ -68,7 +68,7 @@ const textNodes = [
   // Turmpfad
   {
     id: 10,
-    bgImg: setBgImg(1),
+    // bgImg: setBgImg(1),
     text: "Du betrittst den Turm. Im Inneren siehst du verwitterte Wände und einen schwachen Lichtschein von oben. Eine Treppe führt nach oben, und auf der linken Seite ist eine Tür.",
     options: [
       { text: "Die Treppe nehmen", nextText: 20 },
