@@ -10,7 +10,7 @@ Patrick und Nadja fürs alpha testsen und feedback (den wald gibt es nicht er is
 
 erstellung von pixelart: https://www.pixilart.com/draw
 
-doppe klick strg+shift+f wort suche in repo
+doppel klick strg+shift+f wort suche in repo
 strg+p datei suche in repo
 strg+f suche in datei
 strg+d mehrfach suche in datei

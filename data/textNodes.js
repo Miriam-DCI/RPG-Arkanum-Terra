@@ -12,13 +12,14 @@ import {
   addEnemy,
   addAlly,
 } from "./game.js";
+
 const consoleElement = document.getElementById("console");
 consoleElement.style.backgroundImage = null;
 
 const bgImgPathArray = [
-  "/img/Pfad-zur-burg.jpg",
-  "/img/door-closeUp.jpg",
-  "/img/bild-1.jpeg",
+  "./img/Pfad-zur-burg.jpg",
+  "./img/door-closeUp.jpg",
+  "./img/bild-1.jpeg",
 ];
 
 function setBgImg(imgUrlIndex) {
