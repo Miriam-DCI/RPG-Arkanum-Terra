@@ -6,7 +6,7 @@ tutorial video:https://www.youtube.com/watch?v=R1S_NhKkvGA&t=619s
 zum verpixeln von bildern: https://giventofly.github.io/pixelit/#tryit
 
 honorable mentions: melle mit styling ideen
-Patrick und Nadja fürs alpha testsen und feedback (den walt gibt es nicht er ist eine lüge sowie id 4)
+Patrick und Nadja fürs alpha testsen und feedback (den wald gibt es nicht er ist eine lüge sowie id 4)
 
 erstellung von pixelart: https://www.pixilart.com/draw
 

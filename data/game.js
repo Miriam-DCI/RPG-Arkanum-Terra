@@ -18,15 +18,19 @@ import { textNodes, character } from "./textNodes.js";
 
 const textElement = document.getElementById("text");
 const buttonOptionsElement = document.getElementById("btn-options");
-const audioElement = document.getElementById("audio");
+//  audioElement = document.getElementById("audio");
+// audioElement = "/audio/ME3_AnEndOnceAndForAll.mp3";
 
 let inventory = {};
-const bgImgPathArray = ["/img/Pfad-zur-burg.jpg", "/img/door-closeUp.jpg"];
+// let playButton = document.getElementById("play");
 
-// function setBgImg(imgUrlIndex) {
-//   const consoleElement = document.getElementById("console");
-//   consoleElement.style.backgroundImage = `url(${bgImgPathArray[imgUrlIndex]})`;
-// }
+// playButton.addEventListener("click", function () {
+//   playSound();
+// });
+
+function playSound() {
+  audioElement.play();
+}
 
 function addAlly(ally) {
   character.allies.push(ally);
@@ -66,11 +70,7 @@ function addItemToInventory(item) {
 
 function startGame() {
   inventory = {};
-  playSound();
   showtextNode(1);
-}
-function playSound() {
-  audioElement.play();
 }
 
 function showtextNode(textNodeindex) {
@@ -118,5 +118,4 @@ export {
   discoverLocation,
   addEnemy,
   addAlly,
-  //setBgImg,
 };
