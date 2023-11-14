@@ -18,15 +18,8 @@ import { textNodes, character } from "./textNodes.js";
 
 const textElement = document.getElementById("text");
 const buttonOptionsElement = document.getElementById("btn-options");
-//  audioElement = document.getElementById("audio");
-// audioElement = "/audio/ME3_AnEndOnceAndForAll.mp3";
 
 let inventory = {};
-// let playButton = document.getElementById("play");
-
-// playButton.addEventListener("click", function () {
-//   playSound();
-// });
 
 function playSound() {
   audioElement.play();
