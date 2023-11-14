@@ -53,6 +53,13 @@ article {
   outline: none;
 }
 
+#audio {
+  position: absolute;
+  top: 10px;
+  right: 0;
+  margin-top: 5%;
+}
+
 .btn:hover {
   background-color: hsl(200, 100%, 40%);
 }

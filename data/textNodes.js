@@ -22,6 +22,11 @@ const bgImgPathArray = [
   "./img/bild-1.jpeg",
 ];
 
+/**
+ * @description Setzt das Hintergrundbild des Konsolenfensters
+ * @param Parameter es wird der index für das array der Bildpfade übergeben
+ */
+
 function setBgImg(imgUrlIndex) {
   consoleElement.style.backgroundImage = null;
   consoleElement.style.backgroundImage = `url(${bgImgPathArray[imgUrlIndex]})`;
