@@ -10,6 +10,9 @@
   array für charackter story fortschritt (ids der textnodes werden ins array
   gepuscht und später kann abgefragt werden ob wir bereites an einem bestimmten 
   story punkt waren um andeere optionen zu bekommen)
+
+  Mobile ansicht Optimieren 
+  
 */
 
 // imports
