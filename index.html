@@ -27,10 +27,21 @@
       <button class="btn">option</button>
     </div>
 
-    <audio id="audio" controls>
+    <audio class="audio" id="player" controls>
       <source src="/audio/ME3_AnEndOnceAndForAll.mp3" />
       Your browser does not support the audio element.
     </audio>
+    <iframe
+      class="audio"
+      id="ytplayer"
+      autoplay="0"
+      showinfo="0"
+      src="https://www.youtube.com/embed/CtwQuK5pB3Q?si=0ZbfUV2bHICUYhA-"
+      title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      allowfullscreen
+    ></iframe>
     <!-- type="module" -->
     <script src="data/game.js" type="module"></script>
     <!-- <script src="data/logic.js"></script> -->

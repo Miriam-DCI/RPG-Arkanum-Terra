@@ -53,13 +53,19 @@ article {
   outline: none;
 }
 
-#audio {
+.audio {
   position: absolute;
   bottom: 10px;
   right: 0;
   margin-top: 5%;
 }
-
+#player {
+  bottom: 10rem;
+  right: 0;
+}
+#ytplayer {
+  border-radius: 15px;
+}
 .btn:hover {
   background-color: hsl(200, 100%, 40%);
 }

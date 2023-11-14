@@ -1,18 +1,18 @@
 /*
   TODO:
-  funktion zum tausch des bg-img hintergrundbilder funktionieren aktuell nicht weil DOM fehlt
+  -funktion zum tausch des bg-img hintergrundbilder funktionieren aktuell nicht weil DOM fehlt
   array aus dateipfade die sich je nach text-id anpassen 
   
   
-  item abfrage überarbeiten
+  -item abfrage überarbeiten
   Story weiter schreiben (ausführlicher aktuell sind nur kern punkte vorhanden)
 
-  array für charackter story fortschritt (ids der textnodes werden ins array
+  -array für charackter story fortschritt (ids der textnodes werden ins array
   gepuscht und später kann abgefragt werden ob wir bereites an einem bestimmten 
   story punkt waren um andeere optionen zu bekommen)
 
-  Mobile ansicht Optimieren 
-  
+  -Mobile ansicht Optimieren 
+
 */
 
 // imports
@@ -26,7 +26,7 @@ let inventory = {};
 
 /**
  * @description Funktion fügt einen verbündeteten zum spieler hinzu
- * @param
+ * @param Parameter ally wird übergeben
  */
 
 function addAlly(ally) {
@@ -35,7 +35,7 @@ function addAlly(ally) {
 
 /**
  * @description Funktions fügt einen gegner zum spieler hinzu
- * @param
+ * @param Parameter enemy wird übergeben
  */
 
 function addEnemy(enemy) {
@@ -44,7 +44,7 @@ function addEnemy(enemy) {
 
 /**
  * @description Funktion fügt einen ort zur entdeckten orte liste hinzu
- * @param
+ * @param Parameter location wird übergeben
  */
 
 function discoverLocation(location) {
@@ -64,7 +64,7 @@ function updateTimeOfDay() {
 
 /**
  * @description Funktion aktualisiert die Moral des Spielers
- * @param
+ * @param parameter points wird übergeben
  */
 
 function adjustMorality(points) {
@@ -82,7 +82,7 @@ function triggerFlashback() {
 
 /**
  * @description Funktion fügt einen Skill zum Spieler hinzu
- * @param
+ * @param parameter skillType wird übergeben
  */
 
 function improveSkills(skillType) {
@@ -93,7 +93,7 @@ function improveSkills(skillType) {
 
 /**
  * @description Funktion fügt einen Gegenstand zum Inventar hinzu
- * @param
+ * @param parameter item wird übergeben
  */
 
 function addItemToInventory(item) {
@@ -112,7 +112,7 @@ function startGame() {
 
 /**
  * @description Funktion zeigt den Text an und fügt die Buttons hinzu
- * @param
+ * @param parameter textNodeindex wird übergeben
  */
 
 function showtextNode(textNodeindex) {
@@ -135,7 +135,7 @@ function showtextNode(textNodeindex) {
 
 /**
  * @description Funktion zeigt die Optionen an
- * @param
+ * @param parameter option wird übergeben
  */
 
 function showOption(option) {
@@ -146,7 +146,7 @@ function showOption(option) {
 
 /**
  * @description Funktion wählt die Option aus und führt sie aus
- * @param
+ * @param parameter option wird übergeben
  */
 
 function selectOption(option) {
